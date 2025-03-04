@@ -19,26 +19,19 @@ class Quiz extends StatefulWidget{
   //Write other code to change the state
 }
 
-class _QuizState extends State<Quiz>{
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                Color.fromARGB(255, 78, 13, 151),
-                Colors.blue,
-                Color.fromARGB(255, 107, 15, 168),
-              ],
-            ),
-          ),
-          child: StartScreen(),
-        ),
-      ),
-    );
+class _QuizState extends State<Quiz> {
+  List<String> selectedAnswers = [];
+  Widget? activeScreen;
+
+  void chooseAnswer (String answer){
+    selectedAnswers.add(answer);
   }
-}
+void chooseAnswer(String answer) {
+    selectedAnswers.add(answer);
+    if(selectedAnswers.length == questions.length){
+      //switch to the results screen instead
+      setState((){
+        activeScreen = StartScreen(switchScreen);
+      });
+    }
+  }
