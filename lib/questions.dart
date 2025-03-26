@@ -2,57 +2,68 @@ import 'package:quiz_app/quiz_question.dart';
 
 const questions = [
   QuizQuestion(
-    'How did Ed lose his Arm?',
+    'Which wifi standard is the most recent',
     [
-      'Putting his brothers soul in a suit of armor', //Make this the correct one for later. We will shuffle later
-      'In a Duel',
-      'In a Kitchen Accident', 
-      'He has not lose his arm.'
+      'Wifi 5',
+      'Wifi 6E',
+      'Wifi 7', 
+      'Wifi 6.'
     ]
   ),
   QuizQuestion(
-    'How did Ed lose his Arm?',
+    'Which is the latest ethernet standard for home use?',
     [
-      'Putting his brothers soul in a suit of armor', //Make this the correct one for later. We will shuffle later
-      'In a Duel',
-      'In a Kitchen Accident', 
-      'He has not lose his arm.'
+      '10Mbps',
+      '100Mbps',
+      '2500GigE', 
+      '10GE'
     ]
   ),
   QuizQuestion(
-    'How did Ed lose his Arm?',
+    'Which option will block Facebook traffic on a network',
     [
-      'Putting his brothers soul in a suit of armor', //Make this the correct one for later. We will shuffle later
-      'In a Duel',
-      'In a Kitchen Accident', 
-      'He has not lose his arm.'
+      'DNS block',
+      'blackhole the IP ranges',
+      'blackhole the domain name via DNS', 
+      'None of these'
     ]
   ),
   QuizQuestion(
-    'How did Ed lose his Arm?',
+    'Which DNS is typucally fast',
     [
-      'Putting his brothers soul in a suit of armor', //Make this the correct one for later. We will shuffle later
-      'In a Duel',
-      'In a Kitchen Accident', 
-      'He has not lose his arm.'
+      'Cloudflare',
+      'Google',
+      'Quad9', 
+      'Your ISPs DNS'
     ]
   ),
   QuizQuestion(
-    'How did Ed lose his Arm?',
+    'Which DNS blocks facebook traffic',
     [
-      'Putting his brothers soul in a suit of armor', //Make this the correct one for later. We will shuffle later
-      'In a Duel',
-      'In a Kitchen Accident', 
-      'He has not lose his arm.'
+      'None of them',
+      'Google DNS',
+      'Cloudflare', 
+      'NextDNS'
     ]
   ),
   QuizQuestion(
-    'How did Ed lose his Arm?',
+    'What comic on xkcd is about competing standards',
     [
-      'Putting his brothers soul in a suit of armor', //Make this the correct one for later. We will shuffle later
-      'In a Duel',
-      'In a Kitchen Accident', 
-      'He has not lose his arm.'
+      '240',
+      '120',
+      '101', 
+      '927'
     ]
   ),
 ];
+
+List<String> getCorrectAnswers() {
+  return [
+    'Wifi 7',
+    '2500GigE',
+    'None of these',
+    'Cloudflare',
+    'None of them',
+    '927',
+  ];
+}
