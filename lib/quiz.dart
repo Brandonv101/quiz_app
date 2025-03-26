@@ -36,10 +36,13 @@ void chooseAnswer(String answer) {
       });
     }
   }
-  
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
-  }
+
+@override
+Widget build(BuildContext context) {
+  return MaterialApp(
+    home: Scaffold(
+      body: activeScreen ?? const StartScreen(),
+    ),
+  );
+}
 }
