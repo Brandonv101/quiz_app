@@ -1,28 +1,58 @@
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:quiz_app/quiz_question.dart';
 
-class QuizQuestion {
-  const QuizQuestion(this.text, this.answers); //constructor
-
-  final String text; //Question text
-  final List<String> answers;
-}
-
-class QuestionText extends StatelessWidget {
-  final QuizQuestion currentQuestion;
-  
-  const QuestionText({super.key, required this.currentQuestion});
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      currentQuestion.text,
-      style: GoogleFonts.lato(
-        color: Colors.white,
-        fontSize: 24,
-        fontWeight: FontWeight.bold,
-      ),
-      textAlign: TextAlign.center,
-    );
-  }
-}
+const questions = [
+  QuizQuestion(
+    'How did Ed lose his Arm?',
+    [
+      'Putting his brothers soul in a suit of armor', //Make this the correct one for later. We will shuffle later
+      'In a Duel',
+      'In a Kitchen Accident', 
+      'He has not lose his arm.'
+    ]
+  ),
+  QuizQuestion(
+    'How did Ed lose his Arm?',
+    [
+      'Putting his brothers soul in a suit of armor', //Make this the correct one for later. We will shuffle later
+      'In a Duel',
+      'In a Kitchen Accident', 
+      'He has not lose his arm.'
+    ]
+  ),
+  QuizQuestion(
+    'How did Ed lose his Arm?',
+    [
+      'Putting his brothers soul in a suit of armor', //Make this the correct one for later. We will shuffle later
+      'In a Duel',
+      'In a Kitchen Accident', 
+      'He has not lose his arm.'
+    ]
+  ),
+  QuizQuestion(
+    'How did Ed lose his Arm?',
+    [
+      'Putting his brothers soul in a suit of armor', //Make this the correct one for later. We will shuffle later
+      'In a Duel',
+      'In a Kitchen Accident', 
+      'He has not lose his arm.'
+    ]
+  ),
+  QuizQuestion(
+    'How did Ed lose his Arm?',
+    [
+      'Putting his brothers soul in a suit of armor', //Make this the correct one for later. We will shuffle later
+      'In a Duel',
+      'In a Kitchen Accident', 
+      'He has not lose his arm.'
+    ]
+  ),
+  QuizQuestion(
+    'How did Ed lose his Arm?',
+    [
+      'Putting his brothers soul in a suit of armor', //Make this the correct one for later. We will shuffle later
+      'In a Duel',
+      'In a Kitchen Accident', 
+      'He has not lose his arm.'
+    ]
+  ),
+];

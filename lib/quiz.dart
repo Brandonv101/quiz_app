@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/start_screen.dart';
 
+import 'questions.dart';
+
 class StartScreen extends StatelessWidget {
+  const StartScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -23,15 +27,19 @@ class _QuizState extends State<Quiz> {
   List<String> selectedAnswers = [];
   Widget? activeScreen;
 
-  void chooseAnswer (String answer){
-    selectedAnswers.add(answer);
-  }
 void chooseAnswer(String answer) {
     selectedAnswers.add(answer);
     if(selectedAnswers.length == questions.length){
       //switch to the results screen instead
       setState((){
-        activeScreen = StartScreen(switchScreen);
+        activeScreen = const StartScreen();
       });
     }
   }
+  
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+}
