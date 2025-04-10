@@ -29,7 +29,7 @@ const questions = [
     ]
   ),
   QuizQuestion(
-    'Which DNS is typucally fast',
+    'Which DNS is typically fast',
     [
       'Cloudflare',
       'Google',
