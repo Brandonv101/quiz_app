@@ -4,28 +4,28 @@ const questions = [
   QuizQuestion(
     'Which wifi standard is the most recent',
     [
-      'Wifi 5',
+      'Wifi 7',
       'Wifi 6E',
-      'Wifi 7', 
-      'Wifi 6.'
+      'Wifi 5', 
+      'Wifi 6'
     ]
   ),
   QuizQuestion(
     'Which is the latest ethernet standard for home use?',
     [
-      '10Mbps',
+      '2500GigE',
       '100Mbps',
-      '2500GigE', 
+      '10Mbps', 
       '10GE'
     ]
   ),
   QuizQuestion(
     'Which option will block Facebook traffic on a network',
     [
-      'DNS block',
+      'None of these',
       'blackhole the IP ranges',
       'blackhole the domain name via DNS', 
-      'None of these'
+      'DNS block'
     ]
   ),
   QuizQuestion(
@@ -49,10 +49,10 @@ const questions = [
   QuizQuestion(
     'What comic on xkcd is about competing standards',
     [
-      '240',
+      '927',
       '120',
       '101', 
-      '927'
+      '240'
     ]
   ),
 ];
